@@ -73,6 +73,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Exponent function was run.");
 	}
 	
+	function function4()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		for(let x = 0; x<exampleVariable1; x++){
+			var smileyImage = document.createElement(“img”);
+			smileyImage.src = “https://i.imgur.com/jctdkSS.png”;
+			document.getElementById(“additionalmain”).appendChild(smileyImage);
+		}
+		
+		alert("You just ran an exponent function!");
+		console.log("Exponent function was run.");
+	}
+	
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -197,6 +212,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   </center>
 </div>
   
+<!--This is the [x]th page.-->
+<div id="additionalpage" class="page">
+	<!--Header.-->
+	<div id="additionalheader" class="w3-container w3-flat-green-sea">
+		<h1>  NEW PAGE   </h1>
+	</div>
+    	
+	<!--Main content of the page.-->
+	<div id="additionalmain" class="w3-container">
+	<p id="pmain">     </p>
+	</div>
+  		
+	<!--A link that runs a function when clicked and takes the user to a new page.-->
+	<a href=“#additionalpage” class="     " onclick="function4();">     </a>
+</div>
   
   
 <!--Footer!-->
