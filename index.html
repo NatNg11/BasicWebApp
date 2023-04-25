@@ -96,8 +96,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function function5()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		exampleVariable1 = parseFloat(document.getElementById("Box3").value);
+    		exampleVariable2 = parseFloat(document.getElementById("Box4").value);
 		exampleVariable3 = exampleVariable1; 
 		for(let x = 0; x<exampleVariable2; x++){
 			exampleVariable3 = exampleVariable3 * 2;
@@ -109,8 +109,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function function6()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		exampleVariable1 = parseFloat(document.getElementById("Box3").value);
+    		exampleVariable2 = parseFloat(document.getElementById("Box4").value);
 		exampleVariable3 = exampleVariable1; 
 		for(let x = 0; x<exampleVariable2; x++){
 			exampleVariable3 = exampleVariable3 / 2;
@@ -209,7 +209,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Addition</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Multiplication</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Exponent</a>
-<a href="#additionalpage" onclick="function4();" class="w3-btn w3-grey">Special</a>
     
   </center>
 </div>  
@@ -229,13 +228,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Form element. This allows for user input in HTML.-->
 	<form>
 		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
+		<label for="Box3">Enter a number:</label><br>
 		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
+		<input type="number" id="Box3" value="0"><br>
 		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
+		<label for="Box4">Enter another number:</label><br>
 		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
+		<input type="number" id="Box4" value="0">
 		
 		<br><br><br>
 	</form>
