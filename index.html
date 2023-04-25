@@ -84,8 +84,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			document.getElementById(“additionalmain”).appendChild(smileyImage);
 		}
 		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
+		for(let y = 0; y<exampleVariable2; y++){
+			var smileyImage = document.createElement(“img”);
+			smileyImage.src = “https://i.imgur.com/jctdkSS.png”;
+			document.getElementById(“additionalmain”).appendChild(smileyImage);
+		}
+		
+		alert("You just ran special function!");
+		console.log("Special function was run.");
 	}
 	
 	function exampleResultsFunction()
