@@ -94,6 +94,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Special function was run.");
 	}
 	
+	function function5()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		exampleVariable3 = exampleVariable1; 
+		for(let x = 0; x<exampleVariable2; x++){
+			exampleVariable3 = exampleVariable3 * 2;
+		}
+
+		alert("You just ran the left shift function!");
+		console.log("Left shift function was run.");
+	}
+	
+	function function6()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		exampleVariable3 = exampleVariable1; 
+		for(let x = 0; x<exampleVariable2; x++){
+			exampleVariable3 = exampleVariable3 / 2;
+		}
+
+		alert("You just ran the right shift function!");
+		console.log("Right shift function was run.");
+	}
+	
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -146,7 +172,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	  <p>This is a website that can do various calculations as well as do some fun extra things!</p>
 	
-	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
+	  <a href="#one" class="w3-btn w3-grey w3-round">Arithmetic Operations</a>
+	  <a href="#two" class="w3-btn w3-grey w3-round">Bitwise Operations</a>
+	  <a href="#two" class="w3-btn w3-grey w3-round">FUN</a>
 	
 	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
   
@@ -186,7 +214,37 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   </center>
 </div>  
   
-  
+<!--FIRST SUBPAGE-->
+<div id="two" class="page">
+	<div id="headertwo" class="w3-container w3-flat-green-sea">
+		<h1>Question 1</h1>
+	</div>
+	
+  <center>
+    
+    	<div id="contenttwo" class="w3-container">
+        	<p>Input Numbers!</p>    
+    	</div>
+	
+	<!--Form element. This allows for user input in HTML.-->
+	<form>
+		<!--Label for first input field.-->
+		<label for="firstInputBox">Enter a number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="firstInputBox" value="0"><br>
+		<!--Label for second input field.-->
+		<label for="secondInputBox">Enter another number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="secondInputBox" value="0">
+		
+		<br><br><br>
+	</form>
+      
+  <a href="#finalpage" onclick="function5();" class="w3-btn w3-grey">Left Shift</a>
+  <a href="#finalpage" onclick="function6();" class="w3-btn w3-grey">Right Shift</a>
+    
+  </center>
+</div>    
   
 
 	  
