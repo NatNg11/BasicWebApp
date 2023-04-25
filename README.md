@@ -1,2 +1,2 @@
-# [title of your app]
-[description/guide for your app]
+# [Nathan's Website]
+[This website is intended to do some calculations as well as some other fun things!]
